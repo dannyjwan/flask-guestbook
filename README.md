@@ -23,6 +23,14 @@ pip install -r requirements-dev.txt
 pytest
 ```
 
+## Pre-commit hooks (optional but recommended)
+```powershell
+pip install -r requirements-dev.txt
+pre-commit install
+pre-commit run --all-files
+```
+This runs Ruff (lint + format) and small hygiene checks before each commit.
+
 ## Project structure
 - `app.py` – Flask app (factory + routes)
 - `templates/index.html` – UI
@@ -30,5 +38,8 @@ pytest
 - `guestbook.json` – created at first post (ignored by git)
 
 ## Deploy
-- Render: create a Web Service, build command `pip install -r requirements.txt`, start command `python app.py`.
-- Railway/Heroku‑like: set start command similarly or use `flask --app app run --host 0.0.0.0`.
+- Render: one-click via the button above (uses `render.yaml`).
+- Railway/Heroku‑like: set start command `python app.py` or `flask --app app run --host 0.0.0.0`.
+
+## License
+MIT — see `LICENSE`.

@@ -1,5 +1,7 @@
 # Flask Guestbook
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/dannyjwan/flask-guestbook)
+
 A minimal guestbook web app built with Flask. Stores entries in a local JSON file.
 
 ## Run locally
